@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hotel Hazbin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/hazbin_hotel_key_by_darkblood10_ddtatkc-fullview.ico">
+</head>
+<body>
+<div class="body">
+    <header>
+        <img class="logo" title="Reset Game" src="./assets/Hazbin_Hotel_Newest_Logo.png" alt="Pokemon">
+    </header>
+    <div class="playground">
+        <div class="pokemon character">
+            <span class="lvl">Lv. 1</span>
+
+            <img src="assets/3F3F3F_.png" class="sprite">
+
+            <div class="details">
+                <h1 class="name" id="name-character">
+                    Alastor
+                </h1>
+                <div class="hp">
+                    <div class="bar">
+                        <div class="health" id="progressbar-character" style="width: 100%;"></div>
+                    </div>
+                    <span class="text" id="health-character">100 / 100</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="control">
+            <button class="button" id="btn-kick">
+                Fight
+            </button>
+                <button class="button" id="btn-special">
+                    Special
+                </button>
+                <button class="button" id="btn-reset">
+                    Reset
+                </button>
+        </div>
+
+        <div class="pokemon enemy">
+            <span class="lvl">Lv. 1</span>
+
+            <img src="assets/3F3F3F3F3F3F3F3F3F.webp" class="sprite">
+
+            <div class="details">
+                <h1 class="name" id="name-enemy">
+                    Lucifer
+                </h1>
+                <div class="hp">
+                    <div class="bar">
+                        <div class="health" id="progressbar-enemy" style="width: 100%;"></div>
+                    </div>
+                    <span class="text" id="health-enemy">100 / 100</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="catch_screen"></div>
+
+ <div id="logs" aria-live="polite" class="logs"></div>
+
+<script type="module" src="main.js"></script>
+
+</body>
+</html>
