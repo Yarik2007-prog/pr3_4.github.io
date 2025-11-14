@@ -487,3 +487,65 @@ h1 {
 .action label {
     padding: 6px 0;
 }
+
+/* Базовый стиль кнопки (если у тебя уже есть .button, просто дополни его) */
+.button {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: linear-gradient(180deg, #fff 0%, #e6e6e6 100%);
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.2);
+}
+
+.button:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.18);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Специально для кнопок атак — немного другой размер/отступы */
+.attack-btn {
+  min-width: 120px;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+/* Контейнер кнопок атак */
+#attacks-container {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+/* Прогрессбар: контейнер и полоса здоровья */
+.bar {
+  width: 160px; /* подстрой под макет */
+  height: 12px;
+  background: #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.12);
+}
+
+.health {
+  height: 100%;
+  width: 100%; /* будет изменяться JS */
+  background: linear-gradient(90deg, #57b846 0%, #2bb673 100%);
+  transition: width 0.25s ease;
+}
+
+/* если нужен красный цвет, когда мало хп */
+.health.low {
+  background: linear-gradient(90deg, #ff6b6b 0%, #ff3b3b 100%);
+}
